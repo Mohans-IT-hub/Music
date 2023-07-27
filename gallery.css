@@ -1,0 +1,243 @@
+*
+{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+.online
+{
+    text-align: center;
+    background-color: rgb(140, 140, 244);
+    height: 50px;
+    padding-top: 15px;
+    letter-spacing: 3px;
+}
+
+.head
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.musician
+{
+    align-items: center;
+    display: flex;
+    margin-right: 200px;
+}
+
+.options
+{
+    margin-right: 20px;
+}
+
+.options span
+{
+    padding:10px;
+}
+
+pre
+{
+    font-family:"papyrus" , fantasy;
+    color: rgb(11, 11, 139);
+    font-size:60px;
+    text-align: center;
+}
+
+.aboutus
+{
+    background-image: linear-gradient(to bottom ,rgb(11, 11, 139) 0% , rgb(11, 11, 139) 35%, white 35% , white 70%, rgb(11, 11, 139) 70%, rgb(11, 11, 139) 100%);
+    margin: 20px 50px;
+}
+
+.aboutus h1
+{
+    text-align: center;
+    color: white;
+    font-size: 60px;
+}
+
+.strength
+{
+    background-color: white;
+    margin: 120px 100px 10px 100px;
+    padding: 0px 100px;
+}
+
+.strength p , .trinity p , center pre
+{
+    color: rgb(101, 100, 100);
+    line-height: 30px;
+}
+
+.trinity
+{
+    background-color: white;
+    margin-top: 20px;
+}
+
+.london
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    height: 50%;
+    width: 100%;
+}
+
+.london > div:first-child > img
+{
+    height: 100%;
+    width: 100%; 
+    
+}
+.london > div:last-child > img
+{
+    height: 100%;
+    width: 100%;
+
+}
+
+.london > div:first-child{
+    height: 70%;
+    width: 50%;
+}
+.london > div:last-child{
+    height: 80%;
+    width: 59%;
+    overflow: hidden;
+}
+video
+{
+    height: 100%;
+    width: 60%;
+}
+.formimage
+{
+    display: flex;
+    margin-top: 10px;
+    background-image:linear-gradient(to bottom, white 0%,white 30%, rgb(11, 11, 139) 30%, rgb(11, 11, 139) 100%);
+}
+
+.form
+{
+    width: 50%;
+    margin-left: 20px;
+    background-color: white;
+}
+
+.image
+{
+    width: 50%;
+    margin-right: 60px;
+}
+
+.image img
+{
+    object-fit: cover;
+    width: 100%;
+}
+
+.contactform
+{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+    /* grid-template-columns: repeat(2, 1fr); */
+    justify-content: space-evenly;
+    row-gap: 50px;
+}
+
+.message
+{
+    width:80%;
+    margin-left: 115px;
+    margin-top: 50px;
+}
+
+button
+{
+    background-color: rgb(11, 11, 139) ;
+    color:white ;
+    padding: 20px 50px;
+    border-radius: 40px;
+    margin: 30px;
+}
+
+label
+{
+    color:rgb(11, 11, 139);
+    font-weight:200;
+    font-size: larger;
+}
+
+input
+{
+    padding: 10px;
+    border:none;
+    border-bottom: 2px solid rgb(11, 11, 139);
+}
+
+.message input
+{
+    width:83%;
+}
+
+.footer
+{
+    display: flex;
+    background-color: rgb(11, 11, 139);
+    color: white;
+    padding: 80px 10px;
+    justify-content: space-around;
+    line-height: 50px;
+}
+
+.footer span , .chat span
+{
+    font-family:"papyrus" , fantasy;
+    color: white;
+    font-size:20px;
+
+}
+
+.footer p
+{
+    color: rgb(190, 186, 186);
+    cursor: pointer;
+
+}
+
+.contact i , .chat i
+{
+    color: white;
+}
+
+.chat
+{
+    background-color:rgb(11, 11, 139);
+    display: flex;
+    width: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:10px 30px;
+    position: fixed;
+    right: 15px;
+    bottom: 0;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+
+a
+{
+    color: unset;
+    text-decoration: none;
+}

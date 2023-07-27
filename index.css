@@ -1,0 +1,397 @@
+*
+{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+.online
+{
+    text-align: center;
+    background-color: rgb(140, 140, 244);
+    height: 50px;
+    padding-top: 15px;
+    letter-spacing: 3px;
+}
+
+.head
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.musician
+{
+    align-items: center;
+    display: flex;
+    margin-right: 200px;
+}
+
+.options
+{
+    margin-right: 20px;
+}
+
+.options span
+{
+    padding:10px;
+}
+
+pre
+{
+    font-family:"papyrus" , fantasy;
+    color: rgb(11, 11, 139);
+    font-size:60px;
+    text-align: center;
+}
+
+.logo
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* position: relative;
+    top: -20px; */
+    margin-top:-20px;
+}
+
+.para
+{
+    text-align: center;
+    color: rgb(101, 100, 100);
+    font-size: larger;  
+}
+
+.main{
+    display: flex;
+    position: relative;
+    margin-right: 140px;
+    margin-left: 50px;
+}
+
+.left
+{
+    background-color: rgb(225, 227, 230);
+    padding: 50px;
+    width: 50%;
+    
+}
+
+.left p
+{
+    line-height: 25px;
+    margin-top: 100px;
+}
+
+.left pre
+{
+    margin-right: 10px;
+}
+
+pre
+{
+    margin-top: 15px;
+}
+
+/* {
+    transform: scaleY(1.5);
+    object-fit: cover;
+} */
+
+.opacity 
+{
+    width: 50%;
+}
+
+/* .fixed
+{
+    width:50%;
+    position:fixed;
+    right:40px;
+    top:50px;
+    z-index: -1;
+}
+
+body
+{
+    background-color: whitesmoke;
+} */
+
+.images
+{
+    display: flex;
+    justify-content: center;
+    /* height:800px; */
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.images1,.images2, .images3
+{
+    width:33%;
+    position: relative;
+    overflow: hidden;
+}
+
+.images1 img, .images2 img, .images3 img
+{
+    width: 100%;
+    height:100%;
+    transition:400ms;
+}
+
+.imagep
+{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: xx-large;
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+    cursor: pointer;
+}
+
+.images1:hover .imagep
+{
+    display: flex;
+}
+
+.images2:hover .imagep
+{
+    display: flex;
+}
+
+.images3:hover .imagep
+{
+    display: flex;
+}
+
+.images1:hover img
+{
+    scale: 120%
+}
+
+.images2:hover img
+{
+    scale: 120%
+}
+
+.images3:hover img
+{
+    scale: 120%
+}
+
+/* .imagep
+{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height:90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images3 p
+{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height:90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.icons
+{
+    background-color:rgb(11, 11, 139);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 28px;
+    color: white;
+    width: 50px;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    top:300px;
+    font-size: x-large;
+}
+
+.formimage
+{
+    display: flex;
+    margin-top: 10px;
+    background-image:linear-gradient(to bottom, white 0%,white 30%, rgb(11, 11, 139) 30%, rgb(11, 11, 139) 100%);
+}
+
+.form
+{
+    width: 50%;
+    margin-left: 20px;
+    background-color: white;
+}
+
+.image
+{
+    width: 50%;
+    margin-right: 60px;
+}
+
+.image img
+{
+    object-fit: cover;
+    width: 100%;
+}
+
+.contactform
+{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+    /* grid-template-columns: repeat(2, 1fr); */
+    justify-content: space-evenly;
+    row-gap: 50px;
+}
+
+.message
+{
+    width:80%;
+    margin-left: 115px;
+    margin-top: 50px;
+}
+
+button
+{
+    background-color: rgb(11, 11, 139) ;
+    color:white ;
+    padding: 20px 50px;
+    border-radius: 40px;
+    margin: 30px;
+}
+
+label
+{
+    color:rgb(11, 11, 139);
+    font-weight:200;
+    font-size: larger;
+}
+
+input
+{
+    padding: 10px;
+    border:none;
+    border-bottom: 2px solid rgb(11, 11, 139);
+}
+
+.message input
+{
+    width:83%;
+}
+
+.footer
+{
+    display: flex;
+    background-color: rgb(11, 11, 139);
+    color: white;
+    padding: 80px 10px;
+    justify-content: space-around;
+    line-height: 50px;
+}
+
+.footer span , .chat span
+{
+    font-family:"papyrus" , fantasy;
+    color: white;
+    font-size:20px;
+
+}
+
+.footer p
+{
+    color: rgb(190, 186, 186);
+    cursor: pointer;
+
+}
+
+.contact i , .chat i
+{
+    color: white;
+}
+
+.chat
+{
+    background-color:rgb(11, 11, 139);
+    display: flex;
+    width: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:10px 30px;
+    position: fixed;
+    right: 15px;
+    bottom: 0;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+
+a
+{
+    color: unset;
+    text-decoration: none;
+}
+
+@media screen and (min-width:320px) and (max-width:600px)
+{
+.head , .musician , .main , .footer , .formimage
+{
+    flex-direction: column;
+    width: 100%;
+    gap:10px;
+    margin:0;
+}
+
+pre
+{
+    font-size: 20px;
+}
+
+.logo img
+{
+    height: 50%;
+    width: 50%;
+    margin-top: 10px;
+}
+.left , .form
+{width: 100%;
+    flex-grow: 1;
+}
+
+.opacity , .image
+{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    overflow: hidden;
+}
+
+.opacity img , .image img
+{
+    width: 100%;
+}
+.icons
+{
+    display: none;
+}
+
+}
